@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Mobile Design here */
+header {
+  /* border: 1px solid black; */
+  height: 100vh;
+  padding: 2em;
+  background-image: url("images/mobile/image-header.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.logo-nav {
+  /* border: 1px solid red; */
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  /* border: 1px solid green; */
+  height: 100%;
+  width: 150px;
+  background: url("images/logo.svg") no-repeat;
+  background-position: center;
+
+  /* float: left; */
+}
+
+.nav ul {
+    width: 100%;
+    height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav li {
+  display: none;
+}
+
+.nav li:hover{
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: white;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.nav {
+  /* border: 1px solid green; */
+  height: 100%;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  /* float: right; */
+}
+
+/*landing page */
+
+header h1 {
+  /* border: 1px solid black; */
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  margin-top: 1em;
+}
+
+.arrow {
+  /* border: 1px solid black; */
+  height: 100px;
+  margin-top: 5em;
+  display: flex;
+  justify-content: center;
+}
+
+/* Grid starts here */
+
+.grid{
+    border: 1px solid black;
+}
+
+.row{
+    border: 1px solid red;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.first-row{
+    flex-direction: column-reverse;
+    
+}
+
+
+.image{
+    border: 1px solid blue;
+    height: 40%;
+    display: flex;
+}
+.image img{
+  width: 100%;
+}
+
+.text{
+    border: 1px solid green;
+    background-color: whitesmoke;
+    height: 60%;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.text h1{
+  font-size: 2em;  
+}
+.text p {
+  font-size: 1.4em;
+  line-height: 1.6;
+}
+
+.learn{
+  text-transform: uppercase;
+  font-weight: bold;
+  
+}
+
+.imgText1{
+  height: 50%;
+  border: 1px solid yellow;
+  background-image: url("images/mobile/image-graphic-design.jpg");
+  display: flex;
+  background-position: center;
+  background-size: cover;
+}
+
+.imgText2{
+  height: 50%;
+  border: 1px solid yellow;
+  background-image: url("images/mobile/image-header.jpg");
+  display: flex;
+
+}
+
+/* Desktop design here */
+@media (min-width: 550px) {
+  header {
+    height: 120vh;
+    background-image: url("images/desktop/image-header.jpg");
+  }
+
+  .nav{
+    width: 700px;
+  }
+
+  .nav li {
+    display: flex;
+  }
+  .nav img {
+    display: none;
+  }
+
+  .row{
+    flex-direction: row;
+  }
+}
