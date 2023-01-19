@@ -31,8 +31,8 @@ header {
 }
 
 .nav ul {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -85,12 +85,7 @@ header h1 {
 
 /* Grid starts here */
 
-.grid{
-    border: 1px solid black;
-}
-
 .row{
-    border: 1px solid red;
     height: 90vh;
     display: flex;
     flex-direction: column;
@@ -103,7 +98,6 @@ header h1 {
 
 
 .image{
-    border: 1px solid blue;
     height: 40%;
     display: flex;
 }
@@ -112,7 +106,6 @@ header h1 {
 }
 
 .text{
-    border: 1px solid green;
     background-color: whitesmoke;
     height: 60%;
     padding-left: 1.5em;
@@ -124,7 +117,7 @@ header h1 {
 }
 
 .text h1{
-  font-size: 2em;  
+  font-size: 2rem;  
 }
 .text p {
   font-size: 1.4em;
@@ -137,22 +130,57 @@ header h1 {
   
 }
 
-.imgText1{
-  height: 50%;
-  border: 1px solid yellow;
+/* Image and Text*/
+.teamGrid{
+  height: 250vh;
+}
+.imgText{
+  height: 70vh;
   background-image: url("images/mobile/image-graphic-design.jpg");
-  display: flex;
-  background-position: center;
   background-size: cover;
-}
-
-.imgText2{
-  height: 50%;
-  border: 1px solid yellow;
-  background-image: url("images/mobile/image-header.jpg");
   display: flex;
-
+  flex-direction: column;
+  text-align: center;
+  line-height: 1.6;
+  padding-left: 1em;
+  padding-right: 1em;
 }
+.imgText h1{
+  margin-top: 50vh;
+}
+.imgText2{
+  background-image: url("images/mobile/image-photography.jpg");
+}
+
+/* Testimonials and Team */
+
+.teamInfo{
+  height: 140vh;
+}
+
+.teamInfo h2{
+  margin-top: 25px;
+  text-align: center;
+}
+
+.teamDeatils{
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+.teamDeatils img{
+  height: 70px;
+  width: 8vh;
+  border-radius: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+}
+
 
 /* Desktop design here */
 @media (min-width: 550px) {
@@ -175,4 +203,53 @@ header h1 {
   .row{
     flex-direction: row;
   }
+  /*arrow */
+
+  .arrow {
+    /* border: 1px solid black; */
+    height: 100px;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Desktop Grid*/
+
+
+.row{
+    height: 50vh;
+}
+
+
+
+.image{
+    width: 50%;
+    height: 50vh;
+}
+
+
+.text{
+    height: 50vh;
+    width: 50%;
+    background-color: whitesmoke;
+    padding-left: 7em;
+    padding-right: 5em;
+    padding-top: 4em;
+    padding-bottom: 4em;
+    text-align: left;
+}
+
+.text h1{
+  font-size: 2em;  
+}
+
+.text p {
+  font-size: 1.4em;
+}
+
+.learn{
+  text-transform: uppercase;
+  font-weight: bold;
+
+}
+
 }
